@@ -8,7 +8,7 @@ import './styles/ModuleStyles.css'
 
 export default function App(){
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/BiteXl">
       <Routes>
         <Route path="/" element={<MainLayout />} />
         <Route path="/weather" element={<ModulePage title="Weather"><WeatherModule /></ModulePage>} />
