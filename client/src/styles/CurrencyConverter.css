@@ -1,0 +1,95 @@
+.currency-converter {
+  background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+  padding: 2rem;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 1rem auto;
+}
+
+.currency-converter h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.currency-converter .row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.currency-converter input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.currency-converter input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.currency-converter button {
+  padding: 12px 24px;
+  background: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.currency-converter button:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+}
+
+.currency-converter button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.currency-converter .card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  margin-top: 1rem;
+}
+
+.currency-converter .card p {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.currency-converter .card p strong {
+  color: #ffd700;
+}
+
+.currency-converter .error {
+  background: rgba(255, 0, 0, 0.1);
+  color: #ff0000;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.currency-converter .muted {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  margin: 1rem 0;
+}
