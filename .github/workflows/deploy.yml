@@ -22,6 +22,10 @@ jobs:
 
       - name: Build client
         working-directory: ./client
+        # Export Vite env vars so the built assets use the right base path for GitHub Pages
+        env:
+          VITE_BASE: '/BiteXl/'
+          VITE_BASE_PATH: '/BiteXl'
         run: npm run build
 
       - name: Deploy to GitHub Pages

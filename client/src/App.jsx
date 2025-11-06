@@ -7,8 +7,11 @@ import './styles/App.css'
 import './styles/ModuleStyles.css'
 
 export default function App(){
+  // BrowserRouter basename will use the Vite env variable VITE_BASE_PATH when provided.
+  // For GitHub Pages set VITE_BASE_PATH=/BiteXl; on Vercel leave it unset so basename is '/'.
+  const routerBase = import.meta.env.VITE_BASE_PATH || '/'
   return (
-    <BrowserRouter basename="/BiteXl">
+    <BrowserRouter basename={routerBase}>
       <Routes>
         <Route path="/" element={<MainLayout />} />
         <Route path="/weather" element={<ModulePage title="Weather"><WeatherModule /></ModulePage>} />
